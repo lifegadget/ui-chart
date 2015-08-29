@@ -1,0 +1,15 @@
+{
+    "fruits": [
+        "{% repeat 50 %}",
+        {
+            "id":"{% index %}",
+            "fruit":["{% random %}","Apple","Orange","Grapefruit"],
+            "count":"{% integer 0 1000 %}",
+            "region":["{% random %}","East","West","North","South","Central"],
+            "origin":"{% country %}",
+            "website":"{% url %}",
+            "mission":"{% sentence %}",
+            "description":"{% paragraph %}"
+        }
+    ]
+}
